@@ -1,0 +1,29 @@
+
+#player {
+    position: relative;
+    width: 560px;
+    height: 315px;
+  }
+  
+  #player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #player .ytp-logo {
+    display: none;
+  }
+  
+  #player .ytp-chrome-bottom {
+    background-color: #000;
+    color: #fff;
+  }
+  
+
+  .ytp-title-tex{
+    display: none;
+
+  }

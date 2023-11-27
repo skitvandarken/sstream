@@ -1,0 +1,19 @@
+<script>
+
+// Select the YouTube iframe
+const iframe = document.querySelector('iframe[src*="youtube.com"]');
+
+// Create an observer to monitor changes to the iframe's content
+const observer = new MutationObserver(() => {
+  // Check if the video title element has been loaded
+  const titleElement = iframe.contentWindow.document.querySelector('.ytp-title-text');
+  if (titleElement) {
+    // Hide the video title element
+    titleElement.style.display = 'none';
+  }
+});
+
+// Start observing the iframe's content
+observer.observe(iframe, { childList: true }); </script>
+
+<iframe clas="ytp-title-tex" width="100%" height="100%" src="https://www.youtube.com/embed/FTCDd975DQw?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
